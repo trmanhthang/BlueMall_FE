@@ -1,0 +1,29 @@
+.list-product__shop {
+    padding: 20px;
+    height: 750px;
+}
+
+.product-items__name {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: var(--fift-color);
+    font-weight: 600;
+}
+
+.product-items__container-price.product-items__container-price--remove-margin {
+    margin-top: 0;
+}
+
+.product-items--center > span {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    color: #666;
+}
+
+.product-items__container-btn.product-items__container-btn--remove-margin {
+    margin-bottom: 0;
+}
+
+.form__field.form__field-product{
+    margin-bottom: 0;
+}
