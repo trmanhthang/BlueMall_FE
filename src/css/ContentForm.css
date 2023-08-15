@@ -1,0 +1,25 @@
+.body__left-title {
+    color: var(--second-color);
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.body__left-desc-container {
+    font-size: 1.8rem;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+
+.body__left-desc {
+    line-height: 2rem;
+    color: #999;
+}
+
+.body__left {
+    padding: 115px 0;
+}
+
+.body__left-img {
+    width: 80%;
+}

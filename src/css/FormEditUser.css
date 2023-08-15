@@ -1,0 +1,134 @@
+#main-info {
+    background: #e5e5e5;
+}
+
+.container__form-edit-user {
+    margin-left: var(--width-header);
+}
+
+.form-edit-user__header {
+    padding: 30px 20px;
+    box-shadow: 0 0 6px #999;
+    display: flex;
+    align-items: center;
+    background: var(--white-color);
+}
+
+.form-edit-user__header > h1 {
+    text-transform: uppercase;
+    color: var(--fift-color);
+}
+
+.form-edit-user__header > i {
+    color: var(--fift-color);
+    margin-right: 8px;
+    font-size: 1.6rem;
+}
+
+.form-edit-user__container-form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-edit-user__form {
+    background: var(--white-color);
+    margin-top: 20px;
+    width: 994px;
+    margin-bottom: 30px;
+}
+
+.form-edit-user__form-title {
+    margin: 0 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--fift-color);
+}
+
+.form-edit-user__form-title > h2 {
+    font-size: 2rem;
+    color: var(--fift-color);
+    margin-bottom: 8px;
+}
+
+.form-edit-user__form-title > span {
+    font-size: 1.4rem;
+    color: #888;
+}
+
+.form-info {
+    padding: 20px;
+}
+
+.form-info__container-input {
+    margin-bottom: 18px;
+}
+
+.form-info__row {
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.form-info__title {
+    text-align: right;
+    font-size: 1.4rem;
+    color: var(--four-color);
+}
+
+.form-info__input {
+    position: relative;
+}
+
+.form-info__container-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn.btn-info {
+    width: 140px;
+}
+
+.form-info__input-container-icon {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    cursor: pointer;
+}
+
+.form-info__input-container-icon > i {
+    font-size: 1.4rem;
+    color: #888;
+}
+
+.form-info__input-file > input {
+    width: 100%;
+    padding: 6px 4px;
+    margin-top: 13px;
+}
+
+.form-info__input-file--show {
+    display: flex;
+    justify-content: center;
+}
+
+.form-info__container-img {
+    width: 180px;
+    border: 1px solid #999;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.form-info__container-img > img {
+    border-radius: 50%;
+}
+
+.form-edit-user__form--container {
+    width: 176px;
+    padding-left: 20px;
+    margin-top: 10px;
+}

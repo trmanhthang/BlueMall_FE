@@ -1,0 +1,120 @@
+#main__crud {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crud__title {
+    z-index: 1;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    background: #fff;
+    box-shadow: 0px 0px 7px #999;
+}
+
+.container-btn {
+    margin-bottom: 10px;
+}
+
+.container-btn-create {
+    padding-left: 0;
+}
+
+.btn.btn-create {
+    background: linear-gradient(90deg,var(--primary-color), var(--fift-color));
+}
+
+.btn.btn-create:hover {
+    background: linear-gradient(180deg, var(--primary-color), var(--fift-color));
+}
+
+.table__head {
+    text-align: center;
+    border-top: 1px solid #999;
+    font-size: 1.6rem;
+    background: var(--fift-color);
+}
+
+.table__head > h3 {
+    padding: 14px 6px;
+    color: var(--white-color);
+}
+
+.table__content {
+    border-top: 1px solid #999;
+    font-size: 1.3rem;
+}
+
+.table__content > div {
+    padding: 6px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table__content > div > img {
+    border: 1px solid #999;
+}
+
+.btn-table {
+    width: 50%;
+}
+
+.btn.btn-edit {
+    background: linear-gradient(90deg, var(--primary-color), var(--fift-color));
+}
+
+#modalCreateProduct,
+#modalAddProduct,
+#modalAddVoucher {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+}
+
+.container__btn-crud {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.modal__create {
+
+}
+
+.modal__container-title-crud {
+    text-align: center;
+    border-bottom: 1px solid var(--fift-color);
+    padding-bottom: 16px;
+}
+
+.form__field-container > input {
+    width: 100%;
+}
+
+#category {
+    width: 100%;
+    padding: 10px;
+    color: #888;
+    font-size: 1.4rem;
+}
+
+.input__file {
+    width: 100%;
+    color: #888;
+}
+
+.modal__container-voucher {
+    width: 400px;
+}
