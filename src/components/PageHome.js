@@ -1,7 +1,7 @@
 import '../css/Home.css'
 import HeaderPage from "./HeaderPage";
 import FooterForm from "./FooterForm";
-import {Link, useParams} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {Slide} from "react-slideshow-image";
@@ -40,7 +40,7 @@ export default function PageHome() {
     const [checkView, setCheckView] = useState(true)
     const [renderHome, setRenderHome] = useState(false)
 
-
+    const navigate = useNavigate();
     function sortPrice() {
         setCheckSort(!checkSort)
         if (checkSort) {
@@ -117,9 +117,15 @@ export default function PageHome() {
     }
 
     useEffect(() => {
-        axios.get(`http://localhost:8081/home/carts/${idAccount}`).then((response) => {
-            setCarts(response.data)
-        })
+        try {
+            axios.get(`http://localhost:8081/home/carts/${idAccount}`).then((response) => {
+                setCarts(response.data)
+            })
+        } catch (error) {
+            if (error.error === 400) {
+                navigate("/login");
+            }
+        }
 
         axios.get(`http://localhost:8081/home/city`).then((repose) => {
             setCity(repose.data)
@@ -259,24 +265,24 @@ export default function PageHome() {
                                         <div className="body__home-container-filter-items">
                                             <span>Nơi bán</span>
                                             <ul className="body__home-container-filter-items-nav">
-                                                {city.map((city) => {
-                                                    return (
-                                                        <>
-                                                            <li className="body__home-container-filter-items-wrap">
-                                                                <input type={"checkbox"} id={city.name} value={city.name} onClick={(event)=>{
-                                                                    if (event.currentTarget.checked){
-                                                                        arrCity.push(event.currentTarget.value)
-                                                                        setArrCity([...arrCity])
-                                                                    }else {
-                                                                        addArr(event.currentTarget.value)
-                                                                        setArrCity(arrCity.filter(city => city !== event.currentTarget.value));
-                                                                    }
-                                                                }}/>
-                                                                <label htmlFor={city.name}>{city.name}</label>
-                                                            </li>
-                                                        </>
-                                                    )
-                                                })}
+                                                {/*{city.map((city) => {*/}
+                                                {/*    return (*/}
+                                                {/*        <>*/}
+                                                {/*            <li className="body__home-container-filter-items-wrap">*/}
+                                                {/*                <input type={"checkbox"} id={city.name} value={city.name} onClick={(event)=>{*/}
+                                                {/*                    if (event.currentTarget.checked){*/}
+                                                {/*                        arrCity.push(event.currentTarget.value)*/}
+                                                {/*                        setArrCity([...arrCity])*/}
+                                                {/*                    }else {*/}
+                                                {/*                        addArr(event.currentTarget.value)*/}
+                                                {/*                        setArrCity(arrCity.filter(city => city !== event.currentTarget.value));*/}
+                                                {/*                    }*/}
+                                                {/*                }}/>*/}
+                                                {/*                <label htmlFor={city.name}>{city.name}</label>*/}
+                                                {/*            </li>*/}
+                                                {/*        </>*/}
+                                                {/*    )*/}
+                                                {/*})}*/}
 
                                             </ul>
                                         </div>

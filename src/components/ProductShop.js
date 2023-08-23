@@ -7,7 +7,7 @@ import '../css/ProductShop.css'
 import {ErrorMessage, Field, Form, Formik} from "formik";
 import * as Yup from "yup";
 import {getDownloadURL, ref, uploadBytesResumable} from "firebase/storage";
-import storage from "./FirebaseConfig";
+import storage from "./FireBaseConfig";
 
 
 export default function ProductShop() {

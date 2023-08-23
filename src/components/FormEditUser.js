@@ -7,7 +7,7 @@ import * as Yup from "yup";
 import {useNavigate} from "react-router-dom";
 import Swal from "sweetalert2";
 import {getDownloadURL, ref, uploadBytesResumable} from "firebase/storage";
-import storage from "./FirebaseConfig";
+import storage from "./FireBaseConfig";
 
 export default function FormEditUser() {
     const [progressPercent, setProgressPercent] = useState(0)
